@@ -17,7 +17,7 @@ function preload() {
 }
 
 function create() {
-  player = this.add.sprite(400, 300, 'player');
+  player = this.add.sprite(500, 500, 'player');
 }
 
 function update() {
