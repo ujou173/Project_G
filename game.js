@@ -33,6 +33,7 @@ function create() {
     this.children.bringToTop(background);
 
     player = this.add.sprite(this.cameras.main.width / 2, this.cameras.main.height / 2, 'player');
+    player.setScale(0.5);
 
     cursors = this.input.keyboard.createCursorKeys();
 
