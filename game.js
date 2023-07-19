@@ -1,7 +1,11 @@
 var config = {
   type: Phaser.AUTO,
-  width: 800,
-  height: 600,
+  width: '100%',
+  height: '100%',
+  scale: {
+    mode: Phaser.Scale.FIT,
+    autoCenter: Phaser.Scale.CENTER_BOTH
+  },
   scene: {
       preload: preload,
       create: create,
@@ -9,19 +13,19 @@ var config = {
   }
 };
 
-var game = new Phaser.Game(config);
-var player;
+const game = new Phaser.Game(config);
+let player;
 
 function preload() {
   this.load.image('player', 'assets/player.png');
 }
 
 function create() {
-  player = this.add.sprite(500, 500, 'player');
+  player = this.add.sprite(1000, 700, 'player');
 }
 
 function update() {
-  var cursors = this.input.keyboard.createCursorKeys();
+  const cursors = this.input.keyboard.createCursorKeys();
 
   if (cursors.up.isDown) {
       player.y -= 5;
