@@ -34,6 +34,7 @@ function create() {
 
     player = this.add.sprite(this.cameras.main.width / 2, this.cameras.main.height / 2, 'player');
     player.setScale(0.5);
+    // player.setCollideWorldBounds(true, 0.1, 0.1); // 충돌 경계와 캐릭터 사이에 마진 추가
 
     cursors = this.input.keyboard.createCursorKeys();
 
