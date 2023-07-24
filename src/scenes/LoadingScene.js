@@ -18,6 +18,7 @@ import eyeballImg from "../assets/spritesheets/eyeball.png";
 import expUpImg from '../assets/spritesheets/exp-up.png';
 import explosionImg from '../assets/spritesheets/explosion.png';
 
+// 게임 시작 시 화면
 export default class LoadingScene extends Phaser.Scene {
     constructor() {
         super("bootGame");
